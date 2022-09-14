@@ -33,14 +33,14 @@
             this.btnEditar = new System.Windows.Forms.Button();
             this.btnBorrar = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.txtapellido = new System.Windows.Forms.TextBox();
+            this.txtnombre = new System.Windows.Forms.TextBox();
+            this.txtid = new System.Windows.Forms.TextBox();
             this.button4 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
-            this.txtid = new System.Windows.Forms.TextBox();
-            this.txtnombre = new System.Windows.Forms.TextBox();
-            this.txtapellido = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -101,6 +101,54 @@
             this.panel1.Size = new System.Drawing.Size(257, 317);
             this.panel1.TabIndex = 4;
             // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(15, 102);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(44, 13);
+            this.label3.TabIndex = 12;
+            this.label3.Text = "Nombre";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(15, 124);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(44, 13);
+            this.label2.TabIndex = 11;
+            this.label2.Text = "Apellido";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(15, 75);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(18, 13);
+            this.label1.TabIndex = 10;
+            this.label1.Text = "ID";
+            // 
+            // txtapellido
+            // 
+            this.txtapellido.Location = new System.Drawing.Point(79, 121);
+            this.txtapellido.Name = "txtapellido";
+            this.txtapellido.Size = new System.Drawing.Size(145, 20);
+            this.txtapellido.TabIndex = 9;
+            // 
+            // txtnombre
+            // 
+            this.txtnombre.Location = new System.Drawing.Point(79, 95);
+            this.txtnombre.Name = "txtnombre";
+            this.txtnombre.Size = new System.Drawing.Size(145, 20);
+            this.txtnombre.TabIndex = 8;
+            // 
+            // txtid
+            // 
+            this.txtid.Location = new System.Drawing.Point(79, 69);
+            this.txtid.Name = "txtid";
+            this.txtid.Size = new System.Drawing.Size(145, 20);
+            this.txtid.TabIndex = 7;
+            // 
             // button4
             // 
             this.button4.Location = new System.Drawing.Point(18, 256);
@@ -117,57 +165,9 @@
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(221, 23);
             this.button5.TabIndex = 6;
-            this.button5.Text = "Gulardar cambios";
+            this.button5.Text = "Guradar cambios";
             this.button5.UseVisualStyleBackColor = true;
             this.button5.Click += new System.EventHandler(this.button5_Click);
-            // 
-            // txtid
-            // 
-            this.txtid.Location = new System.Drawing.Point(79, 69);
-            this.txtid.Name = "txtid";
-            this.txtid.Size = new System.Drawing.Size(145, 20);
-            this.txtid.TabIndex = 7;
-            // 
-            // txtnombre
-            // 
-            this.txtnombre.Location = new System.Drawing.Point(79, 95);
-            this.txtnombre.Name = "txtnombre";
-            this.txtnombre.Size = new System.Drawing.Size(145, 20);
-            this.txtnombre.TabIndex = 8;
-            // 
-            // txtapellido
-            // 
-            this.txtapellido.Location = new System.Drawing.Point(79, 121);
-            this.txtapellido.Name = "txtapellido";
-            this.txtapellido.Size = new System.Drawing.Size(145, 20);
-            this.txtapellido.TabIndex = 9;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(15, 75);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(18, 13);
-            this.label1.TabIndex = 10;
-            this.label1.Text = "ID";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(15, 124);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(44, 13);
-            this.label2.TabIndex = 11;
-            this.label2.Text = "Apellido";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(15, 102);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(44, 13);
-            this.label3.TabIndex = 12;
-            this.label3.Text = "Nombre";
             // 
             // Form1
             // 

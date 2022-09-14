@@ -1,12 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
+
 
 namespace CRUD_MySQL
 {
@@ -18,10 +13,12 @@ namespace CRUD_MySQL
         {
             InitializeComponent();
             LimpiarCampos();
+            panel1.Enabled = false;
         }
+
         private void VerTabla()
         {
-            DataSet dsTabla = obj.VerTablal();
+            DataSet dsTabla = obj.VerTabla();
             dataGridView1.DataSource = dsTabla.Tables[0];
         }
 
@@ -29,7 +26,7 @@ namespace CRUD_MySQL
 
         private void Form1_Load(object sender, EventArgs e)
         {
-
+            VerTabla();
         }
 
         private void button5_Click(object sender, EventArgs e)
@@ -40,7 +37,7 @@ namespace CRUD_MySQL
                     MessageBox.Show(obj.Agregar(Convert.ToInt32(txtid.Text), txtnombre.Text, txtapellido.Text));
                     break;
                 case "Editar":
-                    MessageBox.Show(obj.Agregar(Convert.ToInt32(txtid.Text), txtnombre.Text, txtapellido.Text));
+                    MessageBox.Show(obj.Editar(Convert.ToInt32(txtid.Text), txtnombre.Text, txtapellido.Text));
                     break;
             }
             VerTabla();
@@ -63,6 +60,10 @@ namespace CRUD_MySQL
                 txtnombre.Text = dataGridView1.CurrentRow.Cells[1].Value.ToString();
                 txtapellido.Text = dataGridView1.CurrentRow.Cells[2].Value.ToString();
             }
+            else
+            {
+                MessageBox.Show("Seleccione un registro a editar");
+            }
         }
 
         private void btnBorrar_Click(object sender, EventArgs e)
@@ -71,6 +72,10 @@ namespace CRUD_MySQL
             {
                 MessageBox.Show(obj.Eliminar(Convert.ToInt32(dataGridView1.CurrentRow.Cells[0].Value.ToString())));
                 VerTabla();
+            }
+            else
+            {
+                MessageBox.Show("Seleccione un registro a eliminar");
             }
         }
 
