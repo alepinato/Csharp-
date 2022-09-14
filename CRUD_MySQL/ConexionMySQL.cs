@@ -59,7 +59,7 @@ namespace CRUD_MySQL
             MySqlCommand cmd = new MySqlCommand(comando, conexion);
             MySqlDataAdapter da = new MySqlDataAdapter(comando, conexion);
             DataSet dt = new DataSet();
-            da.Fill();
+            da.Fill(dt);
             conexion.Close();
             return dt;
         }
